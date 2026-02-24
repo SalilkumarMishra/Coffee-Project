@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - T Coffee Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-cup-hot-fill me-2"></i>
+                <span class="brand-text">T Coffee</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center text-white py-5 mt-5">
+                    <h1 class="display-3 fw-bold">Our Blog</h1>
+                    <p class="lead">Stories, tips, and insights from the coffee world</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Content -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Blog Posts -->
+                <div class="col-lg-8">
+                    <div class="row g-4" id="blogPosts">
+                        <!-- Visible Posts -->
+                        <div class="col-md-6 blog-post">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=600&h=300&fit=crop" class="card-img-top" alt="Coffee roasting">
+                                <div class="card-body">
+                                    <span class="badge bg-primary mb-2">Brewing Tips</span>
+                                    <h5 class="card-title">The Art of Coffee Roasting</h5>
+                                    <p class="text-muted small mb-2"><i class="bi bi-calendar me-1"></i>March 15, 2024</p>
+                                    <p class="card-text">Discover the intricate process of coffee roasting and how different roast levels affect flavor profiles. Learn what makes a perfect roast.</p>
+                                    <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 blog-post">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=300&fit=crop" class="card-img-top" alt="Coffee beans">
+                                <div class="card-body">
+                                    <span class="badge bg-success mb-2">Shop News</span>
+                                    <h5 class="card-title">New Coffee Origins Arriving This Spring</h5>
+                                    <p class="text-muted small mb-2"><i class="bi bi-calendar me-1"></i>March 10, 2024</p>
+                                    <p class="card-text">We're excited to introduce three new single-origin coffees from Ethiopia, Colombia, and Guatemala. Each offers unique tasting notes.</p>
+                                    <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 blog-post">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <img src="https://images.unsplash.com/photo-1517487881594-2787fef5ebf7?w=600&h=300&fit=crop" class="card-img-top" alt="Coffee preparation">
+                                <div class="card-body">
+                                    <span class="badge bg-primary mb-2">Brewing Tips</span>
+                                    <h5 class="card-title">Perfecting Your Home Brew</h5>
+                                    <p class="text-muted small mb-2"><i class="bi bi-calendar me-1"></i>March 5, 2024</p>
+                                    <p class="card-text">Master the art of brewing coffee at home with these expert tips. From grind size to water temperature, we cover it all.</p>
+                                    <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Hidden Posts -->
+                        <div class="col-md-6 blog-post" style="display: none;">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600&h=300&fit=crop" class="card-img-top" alt="Cold brew">
+                                <div class="card-body">
+                                    <span class="badge bg-primary mb-2">Brewing Tips</span>
+                                    <h5 class="card-title">Cold Brew: A Complete Guide</h5>
+                                    <p class="text-muted small mb-2"><i class="bi bi-calendar me-1"></i>February 28, 2024</p>
+                                    <p class="card-text">Everything you need to know about making the perfect cold brew at home. Learn the best techniques and ratios for a smooth, refreshing cup.</p>
+                                    <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 blog-post" style="display: none;">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=600&h=300&fit=crop" class="card-img-top" alt="Latte art">
+                                <div class="card-body">
+                                    <span class="badge bg-warning mb-2">Barista Skills</span>
+                                    <h5 class="card-title">Introduction to Latte Art</h5>
+                                    <p class="text-muted small mb-2"><i class="bi bi-calendar me-1"></i>February 20, 2024</p>
+                                    <p class="card-text">Learn the basics of latte art from our head barista. Discover simple techniques to create beautiful designs in your coffee.</p>
+                                    <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 blog-post" style="display: none;">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <img src="https://images.unsplash.com/photo-1501339847302-ac426a4c7c6f?w=600&h=300&fit=crop" class="card-img-top" alt="Coffee shop">
+                                <div class="card-body">
+                                    <span class="badge bg-success mb-2">Shop News</span>
+                                    <h5 class="card-title">Sustainability Initiatives Update</h5>
+                                    <p class="text-muted small mb-2"><i class="bi bi-calendar me-1"></i>February 15, 2024</p>
+                                    <p class="card-text">We're proud to announce our new sustainability initiatives, including compostable cups and carbon-neutral shipping for online orders.</p>
+                                    <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 blog-post" style="display: none;">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <img src="https://images.unsplash.com/photo-1525385133512-2f3bdd039054?w=600&h=300&fit=crop" class="card-img-top" alt="Iced coffee">
+                                <div class="card-body">
+                                    <span class="badge bg-primary mb-2">Brewing Tips</span>
+                                    <h5 class="card-title">Summer Coffee Recipes</h5>
+                                    <p class="text-muted small mb-2"><i class="bi bi-calendar me-1"></i>February 10, 2024</p>
+                                    <p class="card-text">Cool down with these refreshing iced coffee recipes. From classic cold brew to creative coffee cocktails, we've got you covered.</p>
+                                    <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 blog-post" style="display: none;">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <img src="https://images.unsplash.com/photo-1509042239860-f550c710c5b1?w=600&h=300&fit=crop" class="card-img-top" alt="Coffee equipment">
+                                <div class="card-body">
+                                    <span class="badge bg-info mb-2">Equipment</span>
+                                    <h5 class="card-title">Essential Coffee Equipment for Beginners</h5>
+                                    <p class="text-muted small mb-2"><i class="bi bi-calendar me-1"></i>February 5, 2024</p>
+                                    <p class="card-text">Starting your coffee journey? Here's a guide to the essential equipment you need to brew great coffee at home without breaking the bank.</p>
+                                    <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-12 text-center">
+                            <button id="loadMoreBtn" class="btn btn-primary">Load More Posts</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="col-lg-4 mt-5 mt-lg-0">
+                    <div class="card border-0 shadow-sm mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title mb-3">Categories</h5>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <a href="#" class="text-decoration-none text-dark">
+                                        <i class="bi bi-cup-hot me-2 text-primary"></i>Brewing Tips
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#" class="text-decoration-none text-dark">
+                                        <i class="bi bi-newspaper me-2 text-primary"></i>Shop News
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#" class="text-decoration-none text-dark">
+                                        <i class="bi bi-palette me-2 text-primary"></i>Barista Skills
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#" class="text-decoration-none text-dark">
+                                        <i class="bi bi-tools me-2 text-primary"></i>Equipment
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration-none text-dark">
+                                        <i class="bi bi-globe me-2 text-primary"></i>Coffee Origins
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title mb-3">Recent Posts</h5>
+                            <ul class="list-unstyled">
+                                <li class="mb-3 pb-3 border-bottom">
+                                    <a href="#" class="text-decoration-none text-dark">
+                                        <strong>The Art of Coffee Roasting</strong>
+                                        <p class="text-muted small mb-0 mt-1">March 15, 2024</p>
+                                    </a>
+                                </li>
+                                <li class="mb-3 pb-3 border-bottom">
+                                    <a href="#" class="text-decoration-none text-dark">
+                                        <strong>New Coffee Origins Arriving</strong>
+                                        <p class="text-muted small mb-0 mt-1">March 10, 2024</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration-none text-dark">
+                                        <strong>Perfecting Your Home Brew</strong>
+                                        <p class="text-muted small mb-0 mt-1">March 5, 2024</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="btn btn-primary rounded-circle position-fixed bottom-0 end-0 m-4" style="display: none; width: 50px; height: 50px; z-index: 1000;">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h5 class="mb-3">
+                        <i class="bi bi-cup-hot-fill me-2"></i>T Coffee
+                    </h5>
+                    <p>Crafting exceptional coffee experiences since 2015. We're passionate about bringing you the finest beans from around the world.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white-50 text-decoration-none">Home</a></li>
+                        <li><a href="about.html" class="text-white-50 text-decoration-none">About</a></li>
+                        <li><a href="menu.html" class="text-white-50 text-decoration-none">Menu</a></li>
+                        <li><a href="contact.html" class="text-white-50 text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="mb-3">Connect With Us</h5>
+                    <div class="social-links">
+                        <a href="#" class="text-white-50 me-3" aria-label="Facebook"><i class="bi bi-facebook fs-4"></i></a>
+                        <a href="#" class="text-white-50 me-3" aria-label="Instagram"><i class="bi bi-instagram fs-4"></i></a>
+                        <a href="#" class="text-white-50 me-3" aria-label="Twitter"><i class="bi bi-twitter fs-4"></i></a>
+                        <a href="#" class="text-white-50" aria-label="LinkedIn"><i class="bi bi-linkedin fs-4"></i></a>
+                    </div>
+                    <p class="mt-3 mb-0">
+                        <i class="bi bi-envelope me-2"></i>info@artisancoffee.com<br>
+                        <i class="bi bi-telephone me-2"></i>(555) 123-4567
+                    </p>
+                </div>
+            </div>
+            <hr class="my-4 bg-white-50">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; 2024 T Coffee Shop. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+
